@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9354CBAF-5435-4BDA-88E5-E5A5217096B2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>KitapciOtomasyonProjesi.My.MyApplication</StartupObject>
+    <RootNamespace>KitapciOtomasyonProjesi</RootNamespace>
+    <AssemblyName>KitapciOtomasyonProjesi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>KitapciOtomasyonProjesi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>KitapciOtomasyonProjesi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arayuzler\Adresler\AdresEkle.Designer.vb">
+      <DependentUpon>AdresEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresGuncelle.Designer.vb">
+      <DependentUpon>AdresGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresListele.Designer.vb">
+      <DependentUpon>AdresListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresSil.Designer.vb">
+      <DependentUpon>AdresSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Adresler\AdresSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriEkle.Designer.vb">
+      <DependentUpon>KategoriEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriGuncelle.Designer.vb">
+      <DependentUpon>KategoriGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategorileriListele.Designer.vb">
+      <DependentUpon>KategorileriListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategorileriListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriSil.Designer.vb">
+      <DependentUpon>KategoriSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kategoriler\KategoriSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarKategoriler\KitaplarKategoriler.Designer.vb">
+      <DependentUpon>KitaplarKategoriler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarKategoriler\KitaplarKategoriler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarYazarlar\KitapYazarlar.Designer.vb">
+      <DependentUpon>KitapYazarlar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarYazarlar\KitapYazarlar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapEkle.Designer.vb">
+      <DependentUpon>KitapEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapGuncelle.Designer.vb">
+      <DependentUpon>KitapGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitaplarıListele.Designer.vb">
+      <DependentUpon>KitaplarıListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitaplarıListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapSil.Designer.vb">
+      <DependentUpon>KitapSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Kitaplar\KitapSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarSubeler\KitaplarŞubeler.Designer.vb">
+      <DependentUpon>KitaplarŞubeler.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\KitaplarSubeler\KitaplarŞubeler.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\KullaniciArayuzu\KullaniciArayuzu.Designer.vb">
+      <DependentUpon>KullaniciArayuzu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\KullaniciArayuzu\KullaniciArayuzu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriGuncelle.Designer.vb">
+      <DependentUpon>MusteriGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriEkle.Designer.vb">
+      <DependentUpon>MusteriEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusterileriListele.Designer.vb">
+      <DependentUpon>MusterileriListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusterileriListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriSil.Designer.vb">
+      <DependentUpon>MusteriSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Musteriler\MusteriSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Rapor\Rapor.Designer.vb">
+      <DependentUpon>Rapor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Rapor\Rapor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Satis\SatisEkrani.Designer.vb">
+      <DependentUpon>SatisEkrani.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Satis\SatisEkrani.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeEkle.Designer.vb">
+      <DependentUpon>SubeEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeGuncelle.Designer.vb">
+      <DependentUpon>SubeGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubelerListele.Designer.vb">
+      <DependentUpon>SubelerListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubelerListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeSil.Designer.vb">
+      <DependentUpon>SubeSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Subeler\SubeSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviEkle.Designer.vb">
+      <DependentUpon>YayinEviEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviGuncelle.Designer.vb">
+      <DependentUpon>YayinEviGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviSil.Designer.vb">
+      <DependentUpon>YayinEviSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEviSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEvleriListele.Designer.vb">
+      <DependentUpon>YayinEvleriListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\YayinEvleri\YayinEvleriListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarEkle.Designer.vb">
+      <DependentUpon>YazarEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarGuncelle.Designer.vb">
+      <DependentUpon>YazarGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarlarListele.Designer.vb">
+      <DependentUpon>YazarlarListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarlarListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarSil.Designer.vb">
+      <DependentUpon>YazarSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Yazarlar\YazarSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\YoneticiArayuzu\YöneticiArayuzu.Designer.vb">
+      <DependentUpon>YöneticiArayuzu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\YoneticiArayuzu\YöneticiArayuzu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanSil.Designer.vb">
+      <DependentUpon>CalisanSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanGuncelle.Designer.vb">
+      <DependentUpon>CalisanGuncelle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanGuncelle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanlarıListele.Designer.vb">
+      <DependentUpon>CalisanlarıListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanlarıListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanEkle.Designer.vb">
+      <DependentUpon>CalisanEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Arayuzler\Calisanlar\CalisanEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DAL\AdreslerDal.vb" />
+    <Compile Include="DAL\CalisanlarDal.vb" />
+    <Compile Include="DAL\DataAccessLayer.vb" />
+    <Compile Include="DAL\KategorilerDal.vb" />
+    <Compile Include="DAL\KitaplarDal.vb" />
+    <Compile Include="DAL\MusterilerDal.vb" />
+    <Compile Include="DAL\SatisDal.vb" />
+    <Compile Include="DAL\SubelerDal.vb" />
+    <Compile Include="DAL\YayinEviDal.vb" />
+    <Compile Include="DAL\YazarlarDal.vb" />
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\frmKullaniciGiris.Designer.vb">
+      <DependentUpon>frmKullaniciGiris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Giris\frmKullaniciGiris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\frmYoneticiGirisi.Designer.vb">
+      <DependentUpon>frmYoneticiGirisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Giris\frmYoneticiGirisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Images\frmYoneticiGiris.Designer.vb">
+      <DependentUpon>frmYoneticiGiris.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Images\frmYoneticiGiris.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tablolar\Adresler.vb" />
+    <Compile Include="Tablolar\Calisanlar.vb" />
+    <Compile Include="Tablolar\Entity.vb" />
+    <Compile Include="Tablolar\IEntity.vb" />
+    <Compile Include="Tablolar\Kategoriler.vb" />
+    <Compile Include="Tablolar\Kitaplar.vb" />
+    <Compile Include="Tablolar\Musteriler.vb" />
+    <Compile Include="Tablolar\Satis.vb" />
+    <Compile Include="Tablolar\SubeAdet.vb" />
+    <Compile Include="Tablolar\Subeler.vb" />
+    <Compile Include="Tablolar\YayinEvi.vb" />
+    <Compile Include="Tablolar\Yazarlar.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Arayuzler\Adresler\AdresEkle.resx">
+      <DependentUpon>AdresEkle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Adresler\AdresGuncelle.resx">
+      <DependentUpon>AdresGuncelle.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Adresler\AdresListele.resx">
+      <DependentUpon>AdresListele.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Adresler\AdresSil.resx">
+      <DependentUpon>AdresSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kategoriler\KategoriEkle.resx">
+      <DependentUpon>KategoriEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kategoriler\KategoriGuncelle.resx">
+      <DependentUpon>KategoriGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kategoriler\KategorileriListele.resx">
+      <DependentUpon>KategorileriListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kategoriler\KategoriSil.resx">
+      <DependentUpon>KategoriSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\KitaplarKategoriler\KitaplarKategoriler.resx">
+      <DependentUpon>KitaplarKategoriler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\KitaplarYazarlar\KitapYazarlar.resx">
+      <DependentUpon>KitapYazarlar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kitaplar\KitapEkle.resx">
+      <DependentUpon>KitapEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kitaplar\KitapGuncelle.resx">
+      <DependentUpon>KitapGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kitaplar\KitaplarıListele.resx">
+      <DependentUpon>KitaplarıListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Kitaplar\KitapSil.resx">
+      <DependentUpon>KitapSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\KitaplarSubeler\KitaplarŞubeler.resx">
+      <DependentUpon>KitaplarŞubeler.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\KullaniciArayuzu\KullaniciArayuzu.resx">
+      <DependentUpon>KullaniciArayuzu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Musteriler\MusteriEkle.resx">
+      <DependentUpon>MusteriEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Musteriler\MusteriGuncelle.resx">
+      <DependentUpon>MusteriGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Musteriler\MusterileriListele.resx">
+      <DependentUpon>MusterileriListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Musteriler\MusteriSil.resx">
+      <DependentUpon>MusteriSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Rapor\Rapor.resx">
+      <DependentUpon>Rapor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Satis\SatisEkrani.resx">
+      <DependentUpon>SatisEkrani.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Subeler\SubeEkle.resx">
+      <DependentUpon>SubeEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Subeler\SubeGuncelle.resx">
+      <DependentUpon>SubeGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Subeler\SubelerListele.resx">
+      <DependentUpon>SubelerListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Subeler\SubeSil.resx">
+      <DependentUpon>SubeSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\YayinEvleri\YayinEviEkle.resx">
+      <DependentUpon>YayinEviEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\YayinEvleri\YayinEviGuncelle.resx">
+      <DependentUpon>YayinEviGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\YayinEvleri\YayinEviSil.resx">
+      <DependentUpon>YayinEviSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\YayinEvleri\YayinEvleriListele.resx">
+      <DependentUpon>YayinEvleriListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Yazarlar\YazarEkle.resx">
+      <DependentUpon>YazarEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Yazarlar\YazarGuncelle.resx">
+      <DependentUpon>YazarGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Yazarlar\YazarlarListele.resx">
+      <DependentUpon>YazarlarListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Yazarlar\YazarSil.resx">
+      <DependentUpon>YazarSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\YoneticiArayuzu\YöneticiArayuzu.resx">
+      <DependentUpon>YöneticiArayuzu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Calisanlar\CalisanEkle.resx">
+      <DependentUpon>CalisanEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Calisanlar\CalisanGuncelle.resx">
+      <DependentUpon>CalisanGuncelle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Calisanlar\CalisanlarıListele.resx">
+      <DependentUpon>CalisanlarıListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Arayuzler\Calisanlar\CalisanSil.resx">
+      <DependentUpon>CalisanSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\frmKullaniciGiris.resx">
+      <DependentUpon>frmKullaniciGiris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\frmYoneticiGirisi.resx">
+      <DependentUpon>frmYoneticiGirisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\frmYoneticiGiris.resx">
+      <DependentUpon>frmYoneticiGiris.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\4CD458.jpg" />
+    <Content Include="Images\A4D772.jpg" />
+    <Content Include="Images\AF7C0A.jpg" />
+    <Content Include="Images\arkaa.jpg" />
+    <Content Include="Images\atm.gif" />
+    <Content Include="Images\atm1.gif" />
+    <Content Include="Images\B935DA.jpg" />
+    <Content Include="Images\bg.gif" />
+    <Content Include="Images\bg1.gif" />
+    <Content Include="Images\bg2.gif" />
+    <Content Include="Images\C6F41E.jpg" />
+    <Content Include="Images\CDB0C2.jpg" />
+    <Content Include="Images\E30E5C.jpg" />
+    <Content Include="Images\EB8CEE.jpg" />
+    <Content Include="Images\EBE9FE.jpg" />
+    <Content Include="Images\find.ico" />
+    <Content Include="Images\find1.ico" />
+    <Content Include="Images\if_Global_manager_131490.png" />
+    <Content Include="Images\if_preferences-desktop-user-password_24269.png" />
+    <Content Include="Images\nobetci.jpg" />
+    <Content Include="Images\Other 01.ico" />
+    <Content Include="Images\People.ico" />
+    <Content Include="Images\Sign 07.ico" />
+    <Content Include="Images\Sign 08.ico" />
+    <Content Include="Images\User 14.ico" />
+    <Content Include="Images\User1.ico" />
+    <None Include="Resources\Elder Kitap.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
